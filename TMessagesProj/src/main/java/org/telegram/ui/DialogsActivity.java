@@ -69,6 +69,8 @@ import android.widget.LinearLayout;
 import android.widget.ScrollView;
 import android.widget.TextView;
 
+import com.google.android.exoplayer2.util.Log;
+
 import org.telegram.messenger.AccountInstance;
 import org.telegram.messenger.AndroidUtilities;
 import org.telegram.messenger.ApplicationLoader;
@@ -1518,8 +1520,8 @@ public class DialogsActivity extends BaseFragment implements NotificationCenter.
         maximumVelocity = ViewConfiguration.get(context).getScaledMaximumFlingVelocity();
 
         AndroidUtilities.runOnUIThread(() -> Theme.createChatResources(context, false));
-
         ActionBarMenu menu = actionBar.createMenu();
+
         if (!onlySelect && searchString == null && folderId == 0) {
             doneItem = new ActionBarMenuItem(context, null, Theme.getColor(Theme.key_actionBarDefaultSelector), Theme.getColor(Theme.key_actionBarDefaultIcon), true);
             doneItem.setText(LocaleController.getString("Done", R.string.Done).toUpperCase());
@@ -1631,11 +1633,7 @@ public class DialogsActivity extends BaseFragment implements NotificationCenter.
             if (folderId != 0) {
                 actionBar.setTitle(LocaleController.getString("ArchivedChats", R.string.ArchivedChats));
             } else {
-                if (BuildVars.DEBUG_VERSION) {
-                    actionBar.setTitle("Telegram Beta");
-                } else {
-                    actionBar.setTitle(LocaleController.getString("AppName", R.string.AppName));
-                }
+                actionBar.setTitle("Plus Messenger X");
             }
             if (folderId == 0) {
                 actionBar.setSupportsHolidayImage(true);
@@ -2875,7 +2873,22 @@ public class DialogsActivity extends BaseFragment implements NotificationCenter.
             actionBar.setSearchTextColor(Theme.getColor(Theme.key_actionBarDefaultArchivedSearchPlaceholder), true);
         }
 
-        updateFilterTabs(false);
+        ArrayList<MessagesController.DialogFilter> filters = getMessagesController().dialogFilters;
+        Log.d("KEREN", String.valueOf(filters.isEmpty()));
+        Log.d("KEREN", String.valueOf(getMessagesController().dialogFilters.size()));
+        if (getMessagesController().dialogFilters.size() < 1 && (getMessagesController().dialogFiltersById.get(9999999) == null)) {
+            Log.d("KEREN", "LALALA");
+            MessagesController.DialogFilter filter = new MessagesController.DialogFilter();
+
+            filter.name = "Personal";
+            filter.id = 9999999;
+            filter.pendingUnreadCount = filter.unreadCount = -1;
+            filter.flags |= MessagesController.DIALOG_FILTER_FLAG_CONTACTS;
+            filter.flags |= MessagesController.DIALOG_FILTER_FLAG_NON_CONTACTS;
+
+            FilterCreateActivity.saveFilterToServer(filter, filter.flags, filter.name, filter.alwaysShow, filter.neverShow, filter.pinnedDialogs, true, false, true, false, DialogsActivity.this, null);
+        }
+        updateFilterTabs(true);
 
         return fragmentView;
     }
@@ -2943,9 +2956,11 @@ public class DialogsActivity extends BaseFragment implements NotificationCenter.
             scrimPopupWindow.dismiss();
             scrimPopupWindow = null;
         }
-        ArrayList<MessagesController.DialogFilter> filters = getMessagesController().dialogFilters;
         SharedPreferences preferences = MessagesController.getMainSettings(currentAccount);
+        ArrayList<MessagesController.DialogFilter> filters = getMessagesController().dialogFilters;
+
         if (!filters.isEmpty()) {
+            Log.d("KEREN", "ISI");
             if (force || filterTabsView.getVisibility() != View.VISIBLE) {
                 filterTabsView.setVisibility(View.VISIBLE);
                 int id = filterTabsView.getCurrentTabId();
@@ -2974,6 +2989,7 @@ public class DialogsActivity extends BaseFragment implements NotificationCenter.
                 }
             }
         } else {
+            Log.d("KEREN", "Kosong");
             if (filterTabsView.getVisibility() != View.GONE) {
                 maybeStartTracking = false;
                 if (startedTracking) {

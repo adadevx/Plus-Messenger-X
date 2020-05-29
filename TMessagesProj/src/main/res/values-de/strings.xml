@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="AppName">Telegram</string>
-    <string name="AppNameBeta">Telegram Beta</string>
+    <string name="AppName">Plus X</string>
+    <string name="AppNameBeta">Plus X</string>
     <string name="LanguageName">Deutsch</string>
     <string name="English">Englisch</string>
     <string name="LanguageNameInEnglish">German</string>
@@ -23,12 +23,12 @@
     <!--code enter view-->
     <string name="YourCode">Nummer verifizieren</string>
     <string name="SentSmsCode">Wir haben dir eine SMS mit Aktivierungscode an **%1$s** gesendet.</string>
-    <string name="SentAppCode">Code wurde dir per **Telegram** an deine aktive App geschickt.</string>
-    <string name="SentAppCodeTitle">Prüfe deine Telegram-Nachrichten</string>
+    <string name="SentAppCode">Code wurde dir per **Plus X** an deine aktive App geschickt.</string>
+    <string name="SentAppCodeTitle">Prüfe deine Plus X-Nachrichten</string>
     <string name="SentSmsCodeTitle">Code eingeben</string>
-    <string name="SentCallCode">Wir rufen dich jetzt unter **%1$s** an.\n\nBitte den Anruf nicht annehmen, Telegram kümmert sich um alles.</string>
+    <string name="SentCallCode">Wir rufen dich jetzt unter **%1$s** an.\n\nBitte den Anruf nicht annehmen, Plus X kümmert sich um alles.</string>
     <string name="SentCallOnly">Rufe **%1$s** an, um dir einen Code anzusagen.</string>
-    <string name="CallText">Telegram ruft dich in %1$d:%2$02d an</string>
+    <string name="CallText">Plus X ruft dich in %1$d:%2$02d an</string>
     <string name="SmsText">Sende dir eine SMS in %1$d:%2$02d</string>
     <string name="Calling">Wir rufen dich an…</string>
     <string name="SendingSms">SMS wird gesendet...</string>
@@ -45,7 +45,7 @@
     <string name="ResetAccountButton">KONTO ZURÜCKSETZEN</string>
     <string name="CancelLinkExpired">Link ist ungültig oder abgelaufen.</string>
     <string name="CancelLinkSuccess">Löschvorgang für dein Konto %1$s wurde abgebrochen. Du kannst das Fenster nun schließen.</string>
-    <string name="OtherLoginCode">Dein Anmeldecode lautet **%1$s**. Gebe ihn in der Telegram-App ein, bei der du dich anmelden möchtest.\n\nDen Code niemals weitergeben.</string>
+    <string name="OtherLoginCode">Dein Anmeldecode lautet **%1$s**. Gebe ihn in der Plus X-App ein, bei der du dich anmelden möchtest.\n\nDen Code niemals weitergeben.</string>
     <!--signup view-->
     <string name="YourName">Dein Name</string>
     <string name="RegisterText2">Namen eingeben und ein Profilbild hochladen.</string>
@@ -101,7 +101,7 @@
     <string name="PaymentFailed">Tut uns sehr leid. Die Zahlung wurde abgelehnt.</string>
     <string name="PaymentConnectionFailed">Kann den Zahlungsserver nicht erreichen. Bitte prüfe deine Internetverbindung und versuche es erneut.</string>
     <string name="PaymentWarning">Warnung</string>
-    <string name="PaymentWarningText">Weder Telegram noch %1$s haben Zugriff auf deine Kreditkartendaten. Kreditkartendetails werden nur vom Zahlungssystem %2$s abgewickelt.\n\nZahlungen gehen direkt an den Entwickler von %1$s. Telegram kann keine Haftung übernehmen, du handelst auf eigene Gefahr. Wende dich bei Problemen bitte direkt an den Entwickler von %1$s oder an deine Bank.</string>
+    <string name="PaymentWarningText">Weder Plus X noch %1$s haben Zugriff auf deine Kreditkartendaten. Kreditkartendetails werden nur vom Zahlungssystem %2$s abgewickelt.\n\nZahlungen gehen direkt an den Entwickler von %1$s. Telegram kann keine Haftung übernehmen, du handelst auf eigene Gefahr. Wende dich bei Problemen bitte direkt an den Entwickler von %1$s oder an deine Bank.</string>
     <string name="PaymentPassword">Passwort &amp; E-Mail</string>
     <string name="PaymentPasswordTitle">Passwort</string>
     <string name="PaymentPasswordEnter">Passwort eingeben</string>
@@ -121,7 +121,7 @@
     <string name="NewGroup">Neue Gruppe</string>
     <string name="Yesterday">gestern</string>
     <string name="NoResult">Keine Ergebnisse</string>
-    <string name="NoChats">Willkommen bei Telegram</string>
+    <string name="NoChats">Willkommen bei Plus X</string>
     <string name="RecentlyViewed">Kürzlich angeschaut</string>
     <string name="RecentlyViewedHide">AUSBLENDEN</string>
     <string name="NoChatsHelp">Tippe unten auf den Stift für deine erste Chatnachricht.</string>
@@ -174,7 +174,7 @@
     <string name="DisappearingPhoto">Geheimes Bild</string>
     <string name="DisappearingVideo">Geheimes Video</string>
     <string name="DisappearingGif">Geheimes GIF</string>
-    <string name="CompatibilityChat">%1$s benutzt eine ältere Version von Telegram, sodass Bilder in Geheimen Chats im Kompatibilitätsmodus angezeigt werden.\n\nSobald %2$s Telegram aktualisiert, werden Bilder mit Timern von 1 Minute und kürzer per \"Tippen und Halten\" angezeigt. Du wirst benachrichtigt, sobald dein Chatpartner ein Bildschirmfoto macht.</string>
+    <string name="CompatibilityChat">%1$s benutzt eine ältere Version von Plus X, sodass Bilder in Geheimen Chats im Kompatibilitätsmodus angezeigt werden.\n\nSobald %2$s Telegram aktualisiert, werden Bilder mit Timern von 1 Minute und kürzer per \"Tippen und Halten\" angezeigt. Du wirst benachrichtigt, sobald dein Chatpartner ein Bildschirmfoto macht.</string>
     <string name="SearchMessages">Nachrichten</string>
     <string name="Search">Suche</string>
     <string name="MuteNotifications">Stummschalten</string>
@@ -1571,8 +1571,8 @@
     <string name="LanguageUnknownCustomAlert">Leider enthält das benutzerdefinierte Sprachpaket (**%1$s**) keine Daten für Telegram Android.</string>
     <string name="AskAQuestionInfo">Bedenke bitte, dass der Telegram Support von Freiwilligen betreut wird. Alle versuchen so schnell wie möglich zu antworten, dies kann jedoch manchmal ein bisschen dauern.\n\nBitte schau auch in den  <![CDATA[<a href=\"https://telegram.org/faq/de#allgemeine-fragen\">Telegram FAQ</a>]]> nach. Dort findest du Antworten auf die meisten Fragen und wichtige Tipps zur <![CDATA[<a href=\"https://telegram.org/faq/de#problembehandlung\">Problembehandlung</a>]]>.</string>
     <string name="AskButton">Eine Frage stellen</string>
-    <string name="TelegramFAQ">Telegram FAQ</string>
-    <string name="TelegramFaq">Telegram FAQ</string>
+    <string name="TelegramFAQ">Plus X FAQ</string>
+    <string name="TelegramFaq">Plus X FAQ</string>
     <string name="AddAccount">Konto hinzufügen</string>
     <string name="SelectAccount">Konto auswählen</string>
     <string name="TelegramFaqUrl">https://telegram.org/faq/de</string>

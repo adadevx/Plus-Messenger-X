@@ -1,0 +1,19 @@
+Executable : /home/oji/Android/Sdk/ndk-bundle/ndk-build
+arguments : 
+NDK_PROJECT_PATH=null
+APP_BUILD_SCRIPT=/home/oji/StudioProjects/Plus-Messenger-X/TMessagesProj/jni/Android.mk
+NDK_APPLICATION_MK=/home/oji/StudioProjects/Plus-Messenger-X/TMessagesProj/jni/Application.mk
+APP_ABI=armeabi-v7a
+NDK_ALL_ABIS=armeabi-v7a
+NDK_DEBUG=0
+APP_PLATFORM=android-16
+NDK_OUT=/home/oji/StudioProjects/Plus-Messenger-X/TMessagesProj/build/intermediates/ndkBuild/armv7Release/obj
+NDK_LIBS_OUT=/home/oji/StudioProjects/Plus-Messenger-X/TMessagesProj/build/intermediates/ndkBuild/armv7Release/lib
+NDK_APPLICATION_MK:=jni/Application.mk
+APP_PLATFORM:=android-16
+--jobs=8
+tgvoip1.1
+tgvoip3.1
+tmessages.30
+jvmArgs : 
+

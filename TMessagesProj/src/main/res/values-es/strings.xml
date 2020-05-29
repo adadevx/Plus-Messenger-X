@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="AppName">Telegram</string>
-    <string name="AppNameBeta">Telegram Beta</string>
+    <string name="AppName">Plus X</string>
+    <string name="AppNameBeta">Plus X</string>
     <string name="LanguageName">Español</string>
     <string name="English">Inglés</string>
     <string name="LanguageNameInEnglish">Spanish</string>
@@ -23,7 +23,7 @@
     <!--code enter view-->
     <string name="YourCode">Verificación</string>
     <string name="SentSmsCode">Enviamos un SMS con un código de activación a tu teléfono **%1$s**.</string>
-    <string name="SentAppCode">Enviamos el código a la app de **Telegram** en tu otro dispositivo.</string>
+    <string name="SentAppCode">Enviamos el código a la app de **Plus X** en tu otro dispositivo.</string>
     <string name="SentAppCodeTitle">Revisa tus mensajes en Telegram</string>
     <string name="SentSmsCodeTitle">Pon el código</string>
     <string name="SentCallCode">Estamos llamando al número **%1$s**.\n\nNo contestes. Telegram hará todo el proceso automáticamente.</string>

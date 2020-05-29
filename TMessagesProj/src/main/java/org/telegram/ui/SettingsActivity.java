@@ -2197,7 +2197,7 @@ public class SettingsActivity extends BaseFragment implements NotificationCenter
                     } else if (position == questionRow) {
                         textCell.setTextAndIcon(LocaleController.getString("AskAQuestion", R.string.AskAQuestion), R.drawable.menu_support2, true);
                     } else if (position == faqRow) {
-                        textCell.setTextAndIcon(LocaleController.getString("TelegramFAQ", R.string.TelegramFAQ), R.drawable.menu_help, true);
+                        textCell.setTextAndIcon("PlusX FAQ", R.drawable.menu_help, true);
                     } else if (position == policyRow) {
                         textCell.setTextAndIcon(LocaleController.getString("PrivacyPolicy", R.string.PrivacyPolicy), R.drawable.menu_policy, false);
                     } else if (position == sendLogsRow) {
